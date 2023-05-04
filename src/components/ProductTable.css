@@ -1,0 +1,190 @@
+.product-table-container {
+    margin: 0 auto;
+  }
+  
+  .add-product-container {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .add-product-form input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .product-table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .product-table th, .product-table td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .product-table th {
+    background-color: #2e8ece;
+    color: #fff;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .product-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .prev-button, .next-button {
+    background-color: #2e8ece;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .prev-button:disabled, .next-button:disabled {
+    background-color: #ccc;
+    cursor: default;
+  }
+  
+  .add-product-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .add-product-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .add-product-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-product-container input {
+    margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  }
+  
+  .add-product-container button {
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  .add-product-container button:hover {
+  background-color: #0069d9;
+  }
+  
+  .product-table-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  }
+  
+  .product-table-container h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  }
+  
+  .product-table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  
+  .product-table-container th {
+  text-align: left;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem;
+  }
+  
+  .product-table-container th,
+  .product-table-container td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  }
+  
+  .product-table-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  .product-table-container input[type="number"] {
+  width: 70px;
+  text-align: right;
+  padding-right: 5px;
+  }
+  
+  .product-table-container .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  }
+  
+  .product-table-container .pagination button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  .product-table-container .pagination button:hover {
+  background-color: #0069d9;
+  }
+  
+  .product-table-container .pagination span {
+  margin: 0 0.5rem;
+  }
+  
+  .product-table-container .pagination button[disabled] {
+  background-color: #ccc;
+  cursor: default;
+  }
+  
+  .product-table-container .form-container {
+  margin-top: 2rem;
+  }
+  
+  .product-table-container .form-container h2 {
+  margin-bottom: 1rem;
+  }
+  
+  .product-table-container .form-container form div {
+  margin-bottom: 1rem;
+  }
+  
+  .product-table-container .form-container form label {
+  margin-right: 1rem;
+  }
+  
+  .product-table-container .form-container form input[type="text"],
+  .product-table-container .form-container form input[type="number"] {
+  width: 100%;
+  margin: 0;
+  }
+  
+  .product-table-container .form-container form button[type="submit"] {
+  margin-top: 1rem;
+  }
