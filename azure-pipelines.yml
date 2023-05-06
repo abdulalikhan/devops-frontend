@@ -21,6 +21,15 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- task: Docker@2
+  displayName: 'Build and push Docker image'
+  inputs:
+    containerRegistry: 'DockerHub'
+    repository: 'abdulalikhan/devops-frontend'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: '$(Build.BuildId)'
+
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
