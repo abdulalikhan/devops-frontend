@@ -84,12 +84,12 @@ export default {
   },
   methods: {
     async loadProducts() {
-      const response = await axios.get('http://localhost:5000/products');
+      const response = await axios.get('https://devops-backend-staging.azurewebsites.net/products');
       this.products = response.data;
       this.totalProducts = this.products.length;
     },
     async addProduct() {
-      const response = await axios.post('http://localhost:5000/products', this.newProduct);
+      const response = await axios.post('https://devops-backend-staging.azurewebsites.net/products', this.newProduct);
       this.products.push(response.data);
       this.newProduct = {
         name: '',
@@ -112,13 +112,13 @@ export default {
   },
     async updateQuantity(product) {
       const payload = { quantity: product.quantity };
-      const response = await axios.patch(`http://localhost:5000/products/${product.id}`, payload);
+      const response = await axios.patch(`https://devops-backend-staging.azurewebsites.net/products/${product.id}`, payload);
       const index = this.products.findIndex((p) => p.id === response.data.id);
       this.products.splice(index, 1, response.data);
     },
 
     async deleteProduct(product) {
-      await axios.delete(`http://localhost:5000/products/${product.id}`);
+      await axios.delete(`https://devops-backend-staging.azurewebsites.net/products/${product.id}`);
       const index = this.products.indexOf(product);
       this.products.splice(index, 1);
       await this.loadProducts();
