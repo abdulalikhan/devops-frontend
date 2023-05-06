@@ -1,24 +1,17 @@
-# devops-frontend
+# Frontend for DevOps Project
 
-## Project setup
-```
-npm install
-```
+Flask Frontend for DevOps Project.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Quick Start
 
-### Compiles and minifies for production
+To get the necessary dependencies, run the following command in cmd:
+
 ```
-npm run build
+pip install -r requirements.txt
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+To run the application locally, run the following command in cmd:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+py app.py
+```

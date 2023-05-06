@@ -1,15 +1,16 @@
-FROM node:14-alpine
+FROM python:3.9-slim-buster
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY requirements.txt .
 
-RUN npm install
+RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN npm run build
+EXPOSE 5000
 
-EXPOSE 8080
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
 
-CMD ["npm", "run", "serve"]
+CMD ["flask", "run"]
